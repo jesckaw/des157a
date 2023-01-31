@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cake">
+
+    </div>
+    <script>
+        function getCakeType(){
+            var cakeType = prompt("What type of cake would you like to order? (chocolate, vanilla, strawberry) ");
+            return cakeType;
+        }
+
+        function getCakeSize(){
+            var cakeSize = prompt("What size of cake would you like? (6in, 8in, 11in)");
+            return cakeSize;
+        }
+
+        var chosenCakeType = getCakeType();
+        var chosenCakeSize = getCakeSize();
+
+        cake.innerHTML= (`You have ordered a ${chosenCakeSize} ${chosenCakeType} cake.`);
+    </script>
+    
+</body>
+</html>
