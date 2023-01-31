@@ -1,0 +1,60 @@
+body{
+    font-family: 'Gelasio', serif;
+}
+
+header{
+    max-width: 550px;
+    margin: 40px auto;
+    padding-top: 50px;
+
+}
+main {
+    max-width: 550px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+h1{
+    font-weight: 600;
+    font-size: 64px;
+    color: #373530;
+    margin:0;
+}
+
+p{
+    font-family: 'Gelasio', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #373530;
+
+}
+
+time{
+    font-family: 'Gelasio', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #7D7C78;
+}
+
+footer{
+    text-align: left;
+    max-width: 550px;
+    padding-top: 20px;
+    margin:auto;
+
+}
+
+a:link {
+    text-decoration: underline;
+    color: #373530;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: #373530;
+}
+
+
+
