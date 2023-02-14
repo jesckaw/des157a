@@ -1,0 +1,97 @@
+*{
+    font-family: 'DM Mono', monospace;
+}
+
+body{
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border-radius: 15px;
+    margin: auto;
+    margin-left: 166px;
+    margin-top: 155px;
+    padding:32px;
+    padding-left: 30px;
+}
+
+.overlay{
+    display: grid;
+    place-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.overlay-hidden{
+    display: none;
+}
+
+#result{
+    padding-top: 16px;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 275px;
+    width: 605px;
+}
+
+#result p{
+    width: 500px;
+    left: 50%;
+    font-weight: 500;
+    font-size: 50px;
+    color: #DB81A2;
+    padding: 40%;
+    height: 80px;
+}
+
+.questions{
+    padding-bottom: 16px;
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+label {
+    display: inline-block;
+    width: 350px;
+    text-align: left;
+    margin-right: 10px;
+    padding-bottom: 16;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+select {
+    width: 200px;
+}
+
+form {
+    width: 500px;
+    position: relative;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #CB7091;
+    color: white;
+}
