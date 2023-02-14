@@ -3,75 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Love Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Love Calculator</h1>
-        <form>
-            <div class="row">
-                <label for="name1">Enter your name:</label><input type="text" id="name1">
-                <label for="name2">Enter your crush's name:</label><input type="text" id="name2">
+    <main>
+        <form id="loveForm">
+            <div class="questions">
+                <label for="name1"><span style="font-weight: 500; color:#CB7091">love-bot:</span>&nbsp;enter your name</label>
+                <input type="text" id="name1">
             </div>
-            <div class="row">
-                <label for="color1">Enter your favorite color:</label><input type="text" id="color1">
-                <label for="color2">Enter your crush's favorite color:</label><input type="text" id="color2">
+
+            <div class="questions">
+                <label for="name2"><span style="font-weight: 500; color:#CB7091">love-bot:</span> enter your crush's name </label>
+                <input type="text" id="name2">
             </div>
-            <div class="row">
-                <label for="song1">Enter your favorite song:</label><input type="text" id="song1">
-                <label for="song2">Enter your crush's favorite song:</label><input type="text" id="song2">
+
+            <div class="questions">
+                <label for="color1"><span style="font-weight: 500; color:#CB7091">love-bot:</span>  enter your favorite color</label>
+                <input type="text" id="color1">
             </div>
-            <div class="row">
-                <label for="food1">Enter your favorite food:</label><input type="text" id="food1">
-                <label for="food2">Enter your crush's favorite food:</label><input type="text" id="food2">
+
+            <div class="questions">
+            <label for="color2"><span style="font-weight: 500; color:#CB7091">love-bot:</span>  enter your crush's favorite color</label>
+            <input type="text" id="color2">
             </div>
-            <div class="row">
-                <label for="sign1">Enter your star sign:</label>
+
+            <div class="questions">
+                <label for="song1"><span style="font-weight: 500; color:#CB7091">love-bot:</span>  enter your favorite song</label>
+                <input type="text" id="song1">
+            </div>
+
+            <div class="questions">
+                <label for="song2"><span style="font-weight: 500; color:#CB7091">love-bot:</span> enter your crush's favorite song</label>
+                <input type="text" id="song2">
+            </div>
+
+            <div class="questions">
+                <label for="food1"><span style="font-weight: 500; color:#CB7091">love-bot:</span> enter your favorite food</label>
+                <input type="text" id="food1">
+            </div>
+
+            <div class="questions">
+                <label for="food2"><span style="font-weight: 500; color:#CB7091">love-bot:</span> enter your crush's favorite food</label>
+                <input type="text" id="food2">
+            </div>
+
+            <div class="questions">
+                <label for="sign1"><span style="font-weight: 500; color:#CB7091">love-bot:</span> enter your star sign</label>
                 <select id="sign1">
-                    <option value="">Select your star sign</option>
-                    <option value="Aries">Aries</option>
-                    <option value="Taurus">Taurus</option>
-                    <option value="Gemini">Gemini</option>
-                    <option value="Cancer">Cancer</option>
-                    <option value="Leo">Leo</option>
-                    <option value="Virgo">Virgo</option>
-                    <option value="Libra">Libra</option>
-                    <option value="Scorpio">Scorpio</option>
-                    <option value="Sagittarius">Sagittarius</option>
-                    <option value="Capricorn">Capricorn</option>
-                    <option value="Aquarius">Aquarius</option>
-                    <option value="Pisces">Pisces</option>
+                    <option value="">select your star sign</option>
+                    <option value="aries">aries</option>
+                    <option value="taurus">taurus</option>
+                    <option value="gemini">gemini</option>
+                    <option value="cancer">cancer</option>
+                    <option value="leo">leo</option>
+                    <option value="virgo">virgo</option>
+                    <option value="libra">libra</option>
+                    <option value="scorpio">scorpio</option>
+                    <option value="sagittarius">sagittarius</option>
+                    <option value="capricorn">capricorn</option>
+                    <option value="aquarius">aquarius</option>
+                    <option value="pisces">pisces</option>
                 </select>
-                <label for="sign2">Enter your crush's star sign:</label>
+            </div>
+
+            <div class="questions">
+                <label for="sign2"><span style="font-weight: 500; color:#CB7091">love-bot:</span> enter your crush's star sign</label>
                 <select id = "sign2"> 
-                    <option value="">Select your star sign</option>
-                    <option value="Aries">Aries</option>
-                    <option value="Taurus">Taurus</option>
-                    <option value="Gemini">Gemini</option>
-                    <option value="Cancer">Cancer</option>
-                    <option value="Leo">Leo</option>
-                    <option value="Virgo">Virgo</option>
-                    <option value="Libra">Libra</option>
-                    <option value="Scorpio">Scorpio</option>
-                    <option value="Sagittarius">Sagittarius</option>
-                    <option value="Capricorn">Capricorn</option>
-                    <option value="Aquarius">Aquarius</option>
-                    <option value="Pisces">Pisces</option>
+                    <option value="">select your star sign</option>
+                    <option value="aries">aries</option>
+                    <option value="taurus">taurus</option>
+                    <option value="gemini">gemini</option>
+                    <option value="cancer">cancer</option>
+                    <option value="leo">leo</option>
+                    <option value="virgo">virgo</option>
+                    <option value="libra">libra</option>
+                    <option value="scorpio">scorpio</option>
+                    <option value="sagittarius">sagittarius</option>
+                    <option value="capricorn">capricorn</option>
+                    <option value="aquarius">aquarius</option>
+                    <option value="pisces">pisces</option>
                 </select>
             </div>
-            <div class="row">
-                <button type="submit">Calculate Love</button>
+            <button type="submit">calculate love</button>
+            <div class="overlay-hidden" id="result">
 
             </div>
-            
         </form>
-        <p id="result"></p>
-
-
-    </div>
-    
+    </main>  
 </body>
 </html>
