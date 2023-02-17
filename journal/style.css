@@ -2,6 +2,10 @@ body{
     font-family: 'Gelasio', serif;
 }
 
+header{
+    margin:auto;
+    max-width: 550px;
+}
 .title{
     max-width: 550px;
     margin: 40px auto;
@@ -14,6 +18,13 @@ main {
     padding: 20px;
 }
 
+img{
+    max-width:100%;
+}
+
+figure{
+    text-align: left;
+}
 
 
 h1{
@@ -29,6 +40,7 @@ p{
     font-weight: 400;
     font-size: 16px;
     color: #373530;
+    line-height: 1.4em;
 
 }
 
@@ -50,13 +62,10 @@ footer{
 a:link {
     text-decoration: underline;
     color: #373530;
+    font-weight: bold;
 }
   
 a:visited {
     text-decoration: none;
     color: #373530;
 }
-
-
-
-
