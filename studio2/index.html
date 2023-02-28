@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="full-nav">
+                <h2> JM</h2>
+                <nav>
+                    <ul>
+                        <li id="spr_nav"><a href="#spring">Spring</a></li>
+                        <li id="sum_nav"><a href="#summer">Summer</a></li>
+                        <li id="win_nav"><a href="#winter">Winter</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu-btn.svg" alt="menu button" class="menu_btn">
+            </div>
+
+            
+        </header>
+    
+    
+        <main>
+            <section id="spring" class="">
+                <div class="content">
+
+                    <!-- col 1 -->
+                    <div class="text">
+                        <div class="description">
+                            <h1>Tea on a Spring Day</h1>
+                            <h3>Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.</h3>
+                        </div>
+                        <div class="timeframe">
+                            <h4>Jessica Mei</h4>
+                            <p>Mar 22 • 3 min read</p>
+                        </div>
+                        <button class="expd_btn" id="spring_btn">
+                            <img src="images/expd-button.svg" alt="expand button icon">
+                        </button>
+
+                    </div>
+
+                    <!-- col 2 -->
+                    <div id="slideshow">
+                        <img src="images/spring1.jpg" alt="slideshow image" id="myImage" class="Image">
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section id="summer" class="hide">
+                <div class="content">
+
+                    <!-- col 1 -->
+                    <div class="text">
+                        <div class="description">
+                            <h1>Tea on a Summer Day</h1>
+                            <h3>Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.</h3>
+                        </div>
+                        <div class="timeframe">
+                            <h4>Jessica Mei</h4>
+                            <p>Jul 28 • 3 min read</p>
+                        </div>
+                        <button class="expd_btn" id="summer_btn">
+                            <img src="images/expd-button.svg" alt="expand button icon">
+                        </button>
+                    </div>
+
+                    <!-- col 2 -->
+                    <div id="slideshow">
+                        <img src="images/summer1.png" alt="" class="Image">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="winter" class="hide">
+                <div class="content">
+
+                    <!-- col 1 -->
+                    <div class="text">
+                        <div class="description">
+                            <h1>Tea in Winter</h1>
+                            <h3>Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.</h3>
+                        </div>
+                        <div class="timeframe">
+                            <h4>Jessica Mei</h4>
+                            <p>Jan 25 • 3 min read</p>
+                        </div>
+                        <button class="expd_btn" id="winter_btn">
+                            <img src="images/expd-button.svg" alt="expand button icon">
+                        </button>
+                    </div>
+
+                    <!-- col 2 -->
+                    <div id="slideshow">
+                        <img src="images/winter1.jpg" alt="" class="Image">
+                    </div>
+                </div>
+
+            </section>
+
+            <div id="new_page">
+
+                <section id="expandedSpring" class="hide">
+                    <div class="cover_page">
+                        <div class="description">
+                            <h2>Tea on a Spring Day</h2>
+                            <p>Content for new page goes here...</p>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                    </div>
+                </section>
+  
+                <section id="expandedSummer" class="hide">
+                    <div class="cover_page">
+                        <div class="description">
+                            <h2>Tea on a Summer Day</h2>
+                            <p>Content for new page goes here...</p>
+                        </div>
+                    </div>
+
+                    <div class="paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                    </div>
+                </section>
+  
+                <section id="expandedWinter" class="hide">
+                    <div class="cover_page">
+                        <div class="description">
+                            <h2>Tea in Winter</h2>
+                            <p>Content for new page goes here...</p>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.Lorem ipsum dolor sit amet consectetur. Mauris ultrices urna sit faucibus ultrices egestas. Adipiscing curabitur ut platea integer diam proin fringilla malesuada.
+                        </p>
+                    </div>
+                </section>
+  
+    
+            </div>
+    
+        </main>
+
+    </div>
+
+
+
+
+    
+</body>
+</html>
