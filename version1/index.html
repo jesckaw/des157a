@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   
+    <section id="startPage" class="showing">
+        <!-- image of start game header -->
+        <div id="start_header"><img src="images/start_header.svg" alt=""></div>
+
+        <!-- choose your player -->
+        <div class="options">
+            <div class="option">
+                <img src="images/start_egg1.png" alt="">
+                <button id="start-btn" id="btnPlayer1" class="buttons">&gt;Player 1</button>
+            </div>
+            <div class="option">
+                <img src="images/start_egg2.png" alt="">
+                <button id="start-btn" id="btnPlayer2" class="buttons">&gt;Player 2</button>
+            </div>
+        </div>
+
+
+    </section>
+    
+    <!-- <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
+    <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p> -->
+
+    <section id="gameplay" class="hidden">
+        <div id="game"></div>
+
+        <!-- interface elements like the roll/pass buttons & the die -->
+        <div id="elements">
+            <!-- <button class="btn" id="pass-btn">Pass</button> -->
+            <!-- <div id="actions"></div> -->
+            <div id="roll-btn"></div>
+            
+            <div id="dice">
+                <img src="images/full_dice.svg" alt="">
+            </div>
+
+            <div id="pass-btn"></div>
+
+            <!-- <button class="btn" id="roll-btn">Roll</button> -->
+
+        </div>
+
+        <!-- player one interface elements -->
+        <div class="player" id="playerOne">
+            <div class="group">
+                <h3>SCORE</h3>
+                <h1 id="score1">0</h1>
+            </div>
+            <div class="group">
+                <h3>Player 1</h3>
+                <img src="images/game_egg1.png" alt="">
+            </div>
+        </div>
+
+        <!-- player two interface elements -->
+        <div class="player" id="playerTwo">
+            <div class="group">
+                <h3>SCORE</h3>
+                <h1 id="score2">0</h1>
+            </div>
+            <div class="group">
+                <h3>Player 2</h3>
+                <img src="images/game_egg2.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <div id="score"></div>
+
+
+
+
+    <section class="hidden" id="endPage">
+        <div id="messages">
+            <div class="message" id="message1"></div>
+            <div class="message" id="message2"></div>
+        </div>
+
+        <div id="menu">
+            <button class="buttons" id="tryAgainBtn">Try Again?</button>
+            <button class="buttons" id="quitBtn">Leave Game.</button>
+        </div>
+
+    </section>
+
+
+    
+</body>
