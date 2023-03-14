@@ -1,0 +1,262 @@
+body{
+    background-color: #FFDF98;
+    max-width: 1440px;
+    font-family: 'Press Start 2P', cursive;
+    color:#572701;
+    
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.showing{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons {
+    position: relative; /* position parent to make the ::before element absolute */
+    background-color: transparent;
+    border: none;
+    font-size: 4em;
+    color: #703202;
+    text-decoration: none; /* remove underline by default */
+    padding: 8px 16px; /* add some padding for better look */
+}
+
+.buttons::before {
+    content: ""; /* add empty content */
+    position: absolute; /* position over the text */
+    left: 0; /* position at the left edge of the text */
+    bottom: -2px; /* position just below the text */
+    width: 0; /* start with zero width */
+    height: 2px; /* set the underline height */
+    background-color: #E18F31; /* set the underline color */
+    transition: width 0.3s ease-in-out; /* add a transition effect */
+}
+
+.buttons:hover::before {
+    width: 100%; /* animate the width to the full text width */
+}
+
+.buttons:hover {
+    color: #E18F31; /* change text color on hover */
+}
+
+
+#startPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh; 
+    width: 100vw;
+    gap: 4em;
+}
+
+.option{
+    padding:2em;
+}
+
+  
+#gameplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh; 
+    width: 100vw;
+    gap: 182px;
+
+}
+
+  
+/* #game{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+
+} */
+
+#game {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: #824C22;
+    color: #FBF7D1;
+    padding: 20px;
+    animation: popup 6s ease-in-out forwards;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  @keyframes popup {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -40%);
+    }
+  }
+  
+.btn {
+    font-size: 1.2em;
+    font-family: 'Press Start 2P', cursive;
+    width: 200px;
+    height: 70px;
+    background: #E18F31;
+    color: #FBF7D1;
+    border: 0px;
+    position: relative;
+    box-shadow: 
+        inset -4px 2px 1px 1px #B54406,
+        inset -4px -2px 1px 1px #B54406,
+        inset 4px 0px 1px 1px #B54406; 
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #FBF7D1;
+    color: #E18F31;
+    box-shadow: 
+        inset -4px 2px 1px 1px #D89D6C,
+        inset -4px -2px 1px 1px #D89D6C,
+        inset 4px 0px 1px 1px #D89D6C; 
+
+}
+
+.btn:active {
+    top: 5px;
+    box-shadow: 
+        inset -4px 2px 1px 1px #D89D6C,
+        inset -4px -2px 1px 1px #D89D6C,
+        inset 4px 0px 1px 1px #D89D6C; 
+}
+
+.btn::after {
+    content: '';
+    background: #572701;
+    position: absolute;
+    left: -2.5%;
+    top: 0;
+    width: 105%;
+    height: 100%;
+    z-index: -1;
+}
+
+.btn::before {
+    content: '';
+    background: #572701;
+    position: absolute;
+    left: 0;
+    top: -5%;
+    width: 100%;
+    height: 113%;
+    z-index: -1;
+}
+
+#elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 6em;
+    height: 640px;
+}
+
+#dice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 1em;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height: 640px;
+
+}
+
+.player h3{
+    font-size: 2em;
+}
+
+.player h1{
+    font-size: 4em;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    padding-bottom: 2em;
+}
+
+#endPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    gap: 6em;
+    height: 100vh; 
+    width: 100vw;
+
+}
+
+#messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 16px;
+
+}
+
+#menu button{
+    font-size: 2.25em;
+
+}
